@@ -1,0 +1,13 @@
+type Issue {
+  id: ID!
+  description: String!
+  assignee: User
+}
+
+type User {
+  id: ID!
+}
+
+type Query {
+  issue(id: ID!): Issue
+}
